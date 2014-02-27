@@ -160,7 +160,7 @@ class Serializer(PythonSerializer):
             geometry = geometry.simplify(tolerance=simplify, preserve_topology=True)
         # Optional geometry reprojection
         #if self.srid != geometry.srid:
-        geometry.transform(self.srid)
+        #geometry.transform(self.srid)
         return geometry
 
     def handle_field(self, obj, field_name):
